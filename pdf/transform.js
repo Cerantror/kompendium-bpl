@@ -108,7 +108,7 @@
     '<p class="cv-sub">Materiały z kursu zebrane w jednym miejscu: wszystko do egzaminu teoretycznego BPL w ULC i do praktyki na balonie SP-BFN, z pytaniami kontrolnymi i pełną bazą pytań ULC.</p>' +
     '<div class="cv-meta"><span><b>' + (D.bank.length) + '</b> pytań ULC (plik z 4.04.2025)</span><span><b>' + D.own.length + '</b> pytań kontrolnych</span><span><b>12</b> bloków wiedzy</span></div>' +
     '<p class="ct-h">Spis treści</p><div class="ct">' + toc + '</div>' +
-    '<p class="cv-foot">Wersja z ' + esc((document.getElementById('wersja') || {}).textContent || '') + '. Wersja interaktywna z quizem, egzaminem próbnym, kalkulatorami i checklistami: strona HTML kompendium. Kompendium jest pomocą do nauki – rozstrzygają aktualne przepisy, AIP i instrukcja użytkowania balonu (AFM).</p>' +
+    '<p class="cv-foot">Wersja z ' + esc((document.getElementById('wersja') || {}).textContent || '') + '. Wersja interaktywna z quizem, egzaminem próbnym, kalkulatorami i checklistami: <a href="https://cerantror.github.io/kompendium-bpl/">cerantror.github.io/kompendium-bpl</a>. Kompendium jest pomocą do nauki – rozstrzygają aktualne przepisy, AIP i instrukcja użytkowania balonu (AFM).</p>' +
     '</section>';
   main.insertAdjacentHTML('afterbegin', cover);
   window.scrollTo(0, 0);

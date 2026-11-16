@@ -2,6 +2,8 @@
 
 Interaktywne kompendium do egzaminu teoretycznego na licencję pilota balonowego **BPL** w Urzędzie Lotnictwa Cywilnego. Cała wiedza z 9 przedmiotów egzaminu w jednym miejscu, pytania kontrolne z wyjaśnieniami i pełna baza **903 przykładowych pytań ULC** ([plik ULC z 4.04.2025](https://ulc.gov.pl/_download/personel_lotniczy/lke/bpl.pdf)) z quizem i egzaminem próbnym.
 
+**Strona: [cerantror.github.io/kompendium-bpl](https://cerantror.github.io/kompendium-bpl/)**
+
 Kompendium powstało na podstawie kursu BPL w FBSN i oficjalnej bazy pytań ULC. Przygotował je Mateusz Korona.
 
 ## Co jest w środku
@@ -17,7 +19,7 @@ Kompendium powstało na podstawie kursu BPL w FBSN i oficjalnej bazy pytań ULC.
 
 | Co | Gdzie |
 | --- | --- |
-| Strona z quizem | [`docs/index.html`](docs/index.html) – po włączeniu GitHub Pages dostępna też online; do pracy offline pobierz plik i otwórz go w przeglądarce |
+| Strona z quizem | online: [cerantror.github.io/kompendium-bpl](https://cerantror.github.io/kompendium-bpl/); offline: pobierz [`docs/index.html`](docs/index.html) i otwórz go w przeglądarce |
 | PDF do druku | [`docs/Kompendium-BPL.pdf`](docs/Kompendium-BPL.pdf) |
 | Baza pytań ULC w arkuszu | [`docs/baza-pytan-ulc-2025.csv`](docs/baza-pytan-ulc-2025.csv) – separator `;`, kodowanie UTF-8 |
 

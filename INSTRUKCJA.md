@@ -21,7 +21,7 @@ Ta instrukcja jest dla kursantów, którzy uczą się z kompendium do egzaminu B
 
 ## 1. Jak otworzyć kompendium
 
-- **Online** – strona kompendium na GitHub Pages (adres jest w opisie repozytorium).
+- **Online** – [cerantror.github.io/kompendium-bpl](https://cerantror.github.io/kompendium-bpl/). Zawsze najnowsza wersja.
 - **Offline** – pobierz plik [`docs/index.html`](docs/index.html) (na GitHubie: przycisk *Download raw file*) i otwórz go w przeglądarce. Całe kompendium z quizem i wszystkimi pytaniami jest w tym jednym pliku.
 
 Działa w każdej nowej przeglądarce: Chrome, Edge, Firefox, Safari – na komputerze i na telefonie.
