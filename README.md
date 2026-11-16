@@ -23,6 +23,8 @@ Kompendium powstało na podstawie kursu BPL w FBSN i oficjalnej bazy pytań ULC.
 
 Wyniki quizu i listę pytań, w których się pomyliłeś, zapisuje tylko Twoja przeglądarka.
 
+**Pełna instrukcja dla kursanta** – wyszukiwarka, tryb nauki i egzamin próbny, wyjaśnienia z powrotem do testu, adnotacje, postępy, kalkulatory, checklisty i plan nauki: [INSTRUKCJA.md](INSTRUKCJA.md).
+
 ## Klucz ULC ma zawsze rację
 
 Na egzaminie liczy się odpowiedź z klucza ULC – także wtedy, gdy opiera się na dawnych przepisach albo jest merytorycznie wątpliwa. Kompendium i quiz traktują ją jako poprawną. Tam, gdzie klucz różni się od obecnych przepisów lub od fizyki (np. wysokościomierz, dawne krajowe przepisy o tlenie i lotach nocnych, stare wytyczne pierwszej pomocy), pod tekstem i pod odpowiedzią w quizie jest **adnotacja** z wyjaśnieniem. W bazie jest 24 takich pytań.
@@ -57,6 +59,7 @@ pdf/
   transform.js         zamienia stronę na dokument do druku (okładka, spis, dodatki z pytaniami)
   print.css            style druku
 docs/                  gotowe pliki do publikacji (GitHub Pages): strona, PDF, CSV
+INSTRUKCJA.md          instrukcja korzystania z kompendium dla kursantów
 VERSION                data wersji pokazywana na stronie i w PDF
 ```
 
