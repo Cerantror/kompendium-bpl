@@ -1,0 +1,144 @@
+<section class="block" id="zasady" data-title="Zasady lotu" data-short="Zasady lotu" data-group="Przedmioty" data-exam="10 pytań · 20 min" data-num="5">
+<header class="block-head">
+<p class="eyebrow">Przedmiot 5 · egzamin 10 pytań / 20 min (test „balonowy”)</p>
+<h2>Zasady lotu – aerostatyka balonu</h2>
+<p class="lead">Dlaczego balon lata, od czego zależy udźwig, jak działa bezwładność i jakie ograniczenia operacyjne z tego wynikają. Warto umieć policzyć udźwig samodzielnie – poniżej jest kalkulator do ćwiczeń.</p>
+</header>
+
+<h3 id="zasady-rodzaje">Rodzaje balonów</h3>
+<ul>
+<li><strong>Balon na ogrzane powietrze</strong> – balon wolny, siła nośna z ogrzanego powietrza.</li>
+<li><strong>Balon gazowy</strong> – siła nośna z gazu lżejszego od powietrza: wodór (ok. 1,14 kg/m³ siły nośnej, palny) lub hel (ok. 1,05 kg/m³, niepalny). Wysokość reguluje się balastem (suchy piasek, woda) i upuszczaniem gazu klapą.</li>
+<li><strong>Balon o konstrukcji mieszanej</strong> (Rozière) – ogrzane powietrze + niepalny gaz; loty długodystansowe.</li>
+<li><strong>Sterowiec na ogrzane powietrze</strong> – ma silnik, ale ten nie daje siły nośnej.</li>
+</ul>
+
+<h3 id="zasady-archimedes">Prawo Archimedesa i równanie stanu gazu</h3>
+<p>Na balon działa siła wyporu równa ciężarowi wypartego powietrza. Balon na ogrzane powietrze unosi się, bo gorące powietrze w powłoce ma mniejszą gęstość niż powietrze wokół.</p>
+<p class="formula">p · V = m · R · T &nbsp;&nbsp;→&nbsp;&nbsp; ρ = p / (R · T)</p>
+<ul>
+<li>p – ciśnienie [Pa], T – temperatura w kelwinach [K = °C + 273], R – stała gazowa powietrza = <strong>287 J/(kg·K)</strong>.</li>
+<li>Gęstość rośnie z ciśnieniem i maleje z temperaturą. Wyższa temperatura = mniejsza gęstość.</li>
+<li><strong>Jednostkowa siła nośna</strong>: a = ρ<sub>otoczenia</sub> − ρ<sub>w powłoce</sub> [kg/m³]. <strong>Całkowita siła nośna</strong>: L = a × V (iloczyn jednostkowej siły nośnej i pojemności powłoki).</li>
+</ul>
+<div class="example"><p class="ex-t">Przykład (balon 2 200 m³, dane z wykładu)</p>
+<p>p = 1020 hPa = 102 000 Pa, otoczenie 10°C (283 K), powłoka 100°C (373 K).</p>
+<p>ρ<sub>ot</sub> = 102 000 / (287 × 283) = <strong>1,256 kg/m³</strong> · ρ<sub>pow</sub> = 102 000 / (287 × 373) = <strong>0,953 kg/m³</strong></p>
+<p>a = 1,256 − 0,953 = 0,303 kg/m³ → L = 0,303 × 2 200 = <strong>ok. 667 kg</strong> (na balon, butle, ludzi).</p>
+<p class="small">Na slajdzie wykładu gęstość przy 10°C podano jako 1,231 kg/m³ (wynik ok. 612 kg) – to błąd rachunkowy; 1,231 odpowiada ok. 15°C. Na egzaminie liczy się metoda.</p></div>
+<div class="example"><p class="ex-t">Przykład odwrotny: jaka temperatura w powłoce?</p>
+<p>Balon 3 000 m³, masa balonu z gazem 320 kg, 3 osoby × 90 kg = 270 kg, p = 1000 hPa, otoczenie 25°C (298 K).</p>
+<p>ρ<sub>ot</sub> = 100 000 / (287 × 298) = 1,169 kg/m³ · potrzebne a = 590 / 3 000 = 0,197 kg/m³</p>
+<p>ρ<sub>pow</sub> = 1,169 − 0,197 = 0,972 kg/m³ → T = 100 000 / (287 × 0,972) ≈ 358 K ≈ <strong>85°C</strong>.</p></div>
+
+<div class="calc" id="calc-lift" data-calc="lift">
+<p class="calc-t">Kalkulator udźwigu</p>
+<div class="calc-grid">
+<label for="cl-v">Pojemność powłoki [m³]<input id="cl-v" type="number" value="2549" min="100" step="50"></label>
+<label for="cl-ta">Temperatura otoczenia [°C]<input id="cl-ta" type="number" value="15" step="1"></label>
+<label for="cl-ti">Temperatura w powłoce [°C]<input id="cl-ti" type="number" value="100" step="1"></label>
+<label for="cl-p">Ciśnienie [hPa]<input id="cl-p" type="number" value="1013" step="1"></label>
+<label for="cl-m">Masa do uniesienia [kg]<input id="cl-m" type="number" value="606" step="1"></label>
+</div>
+<div class="calc-out" id="cl-out" aria-live="polite"></div>
+<p class="small">Wartości startowe: SP-BFN (2 549 m³), balon z 4 butlami 381 kg + pilot i 2 pasażerów 225 kg. Kalkulator pokazuje fizykę; do planowania zawsze używaj wykresu załadowania z AFM i limitu temperatury powłoki.</p>
+</div>
+
+<h3 id="zasady-czynniki">Od czego zależy udźwig</h3>
+<div class="tbl"><table>
+<thead><tr><th>Czynnik</th><th>Wpływ</th></tr></thead>
+<tbody>
+<tr><td>Temperatura otoczenia ↓</td><td>udźwig <strong>rośnie</strong> (zimne powietrze gęstsze). Dlatego poranne i zimowe loty mają najlepszy udźwig, a latem łatwo przeładować balon.</td></tr>
+<tr><td>Ciśnienie ↓ (wysokość, start wysoko n.p.m.)</td><td>udźwig <strong>maleje</strong>. Wyżej położone miejsce startu = mniejsza dopuszczalna masa startowa.</td></tr>
+<tr><td>Wilgotność ↑</td><td>udźwig maleje (wilgotne powietrze lżejsze)</td></tr>
+<tr><td>Temperatura w powłoce ↑</td><td>udźwig rośnie, ale <strong>rosną straty ciepła i zużycie gazu</strong>; ograniczenie: maks. temperatura powłoki z AFM</td></tr>
+<tr><td>Pojemność powłoki ↑</td><td>przy tej samej temperaturze większy całkowity udźwig</td></tr>
+<tr><td>Inwersja, termika</td><td>inwersja wymaga wyższej temperatury w powłoce; duszenia termiczne dociążają balon</td></tr>
+</tbody></table></div>
+<aside class="note key"><p class="note-t">Metoda uproszczona (z wykładu)</p><p>Przy 15°C i 1010 hPa: <strong>udźwig ≈ pojemność × 0,3 kg/m³</strong>. Korekta: <strong>±9 kg na każdy 1°C</strong> różnicy od 15°C i <strong>±6 kg na każde 10 hPa</strong> różnicy od 1010 hPa. Te poprawki pasują do balonu ok. 2 000 m³; ogólnie to ok. <strong>1,5% udźwigu na 1°C</strong> i <strong>1% na 10 hPa</strong>. Uwaga przy startach wysoko n.p.m.: prognozy podają ciśnienie zredukowane do poziomu morza, a liczy się ciśnienie w miejscu startu.</p></aside>
+<p>Jak przeładowanie przekłada się na temperaturę: przekroczenie dopuszczalnego udźwigu prowadzi do <strong>przekroczenia dopuszczalnej temperatury powłoki</strong>. Możliwe jest też przekroczenie MTOM bez przegrzania powłoki – w niskiej temperaturze otoczenia udźwig jest duży i łatwo załadować za dużo. Oba limity sprawdza się osobno.</p>
+
+<h3 id="zasady-sily">Siły aerostatyczne i aerodynamiczne</h3>
+<ul>
+<li>Balon podlega <strong>tylko siłom aerostatycznym</strong>, gdy leci z prędkością i kierunkiem masy powietrza, w której się znajduje. Gdy porusza się względem powietrza (wznoszenie, opadanie, uskok wiatru, uwięź, balon na ziemi w wietrze) – działają też <strong>siły aerodynamiczne</strong>.</li>
+<li>Gęstość powietrza w powłoce przy wznoszeniu jest mniejsza od otoczenia, przy opadaniu – większa.<span class="adn"><b>Adnotacja:</b> Fizycznie gorące powietrze w powłoce jest zawsze rzadsze od otaczającego, także przy opadaniu. Balon opada, gdy siła wyporu (różnica gęstości × pojemność powłoki) jest mniejsza od jego ciężaru.</span></li>
+<li><strong>Pozorna siła nośna</strong>: wiatr opływający stojącą powłokę daje aerodynamiczną siłę nośną (jak na skrzydle), balon „chce” startować przy niższej temperaturze. Po oderwaniu balon przyspiesza do prędkości wiatru, siła ta znika i balon może <strong>przepaść</strong>. Przy wietrze nagrzej balon mocniej przed startem.</li>
+<li><strong>Start zza zasłony</strong> (las, budynki) chroni przy napełnianiu, ale po wyjściu ponad zasłonę uderzenie wiatru wypycha gorące powietrze, odchyla płomień i może spowodować przepadanie. Za blisko zasłony – ryzyko wciągnięcia przez rotor.</li>
+<li><strong>Obciążenie dynamiczne</strong> (wzór empiryczny): P = 15 × v² [kg], v – prędkość pionowego ruchu powietrza [m/s]. Duszenie 1,5 m/s = ok. 34 kg dodatkowego obciążenia. Zaplanuj rezerwę udźwigu, żeby hamowanie duszenia nie przegrzało powłoki.</li>
+<li>Szybkie opadanie może spłaszczyć powłokę i wycisnąć gorące powietrze (zamykanie wlotu). Szybkie wznoszenie (np. po zrzucie skoczków) może wcisnąć klapę spadochronową lub zerwać linki centralizujące.</li>
+</ul>
+
+<h3 id="zasady-bezwladnosc">Bezwładność i straty ciepła</h3>
+<ul>
+<li>Do masy balonu dochodzi masa powietrza w powłoce: balon 2 600 m³ to ok. 320 kg sprzętu + ok. 3 200 kg powietrza = ok. <strong>3,5 t</strong> w ruchu. Bezwładność rośnie z wielkością i obciążeniem balonu.</li>
+<li>Reakcja na palnik jest opóźniona – grzej z wyprzedzeniem, nie czekaj, aż balon zacznie opadać.</li>
+<li>Energia rośnie z kwadratem prędkości: wyhamowanie opadania 2 m/s wymaga <strong>16 razy</strong> więcej energii (czasu palnika) niż 0,5 m/s.</li>
+<li>W spokojnym powietrzu balon bez palnika przez chwilę nie traci wysokości (lepkość powietrza), a potem zaczyna opadać przy dość niskiej temperaturze w powłoce – trzeba dłużej grzać.</li>
+<li>Straty ciepła przez promieniowanie rosną z czwartą potęgą temperatury bezwzględnej. Wzrost temperatury powłoki z 85 do 100°C zwiększa zużycie gazu o ok. <strong>23%</strong>. Stara, porowata powłoka też zużywa więcej gazu.</li>
+<li>Zużycie gazu rośnie wraz z temperaturą zewnętrzną (wyższa temperatura powłoki potrzebna do tego samego udźwigu).</li>
+</ul>
+
+<h3 id="zasady-paliwo">Fizyka paliwa</h3>
+<ul>
+<li>Propan wrze w <strong>−42°C</strong>, butan w ok. <strong>−0,5°C</strong> – dlatego do balonów lepszy jest propan (niższa temperatura parowania, wyższe ciśnienie w zimie).</li>
+<li>Ciśnienie w butli zależy od <strong>temperatury</strong>, nie od ilości gazu: propan techniczny ok. <strong>0,38 MPa (3,8 bar) przy 0°C</strong> i ok. <strong>0,65 MPa (6,5 bar) przy 15°C</strong>. 1 MPa = 10 bar. Mieszanka propan-butan daje niższe ciśnienie.</li>
+<li>Wyższe ciśnienie zasilania = większa wydajność palnika; niższe = mniejsza.</li>
+<li>Parujący gaz <strong>pochłania ciepło</strong> z otoczenia – stąd szron na zaworach i przewodach.</li>
+<li>Gazowy propan jest ok. <strong>1,5 raza cięższy od powietrza</strong>, zbiera się w zagłębieniach terenu i na podłodze przyczepy.</li>
+<li>Jednostki: ciśnienie w paskalach [Pa], temperatura w kelwinach [K]; 15°C = 288 K; ISA: 15°C i 1013,25 hPa.</li>
+</ul>
+
+<h3 id="zasady-ograniczenia">Ograniczenia operacyjne (AFM)</h3>
+<p>Instrukcja użytkowania w locie (AFM) zawiera m.in.:</p>
+<div class="cols">
+<ul>
+<li>warunki meteo do startu (maks. wiatr)</li>
+<li>stan balonu i dopuszczalne uszkodzenia</li>
+<li>wyposażenie bezpieczeństwa</li>
+<li>paliwo i palniki (min./maks. ciśnienie)</li>
+<li>załadowanie (MTOM, MLM)</li>
+<li>załoga, liczba osób</li>
+<li>maks. prędkości pionowe</li>
+</ul>
+<ul>
+<li>maks. temperatura powłoki</li>
+<li>użycie systemu szybkiego opróżniania i liny klapy</li>
+<li>dopuszczalne kombinacje powłoka–palnik–kosz</li>
+<li>dopuszczalne typy butli</li>
+<li>loty na uwięzi</li>
+<li>wyposażenie różnych producentów</li>
+<li>loty nocne</li>
+</ul>
+</div>
+<aside class="note bfn"><p class="note-t">Limity SP-BFN (wariant 90: 90 000 ft³ = 2 549 m³, grupa A)</p>
+<div class="tbl"><table><tbody>
+<tr><td>MTOM</td><td class="num">816 kg (1 800 lb)</td></tr>
+<tr><td>Załoga</td><td class="num">pilot + 2 pasażerów (w limitach masy)</td></tr>
+<tr><td>Maks. temperatura powłoki</td><td class="num">120°C; do startu 100°C</td></tr>
+<tr><td>Maks. prędkość wznoszenia</td><td class="num">5 m/s (1 000 ft/min)</td></tr>
+<tr><td>Klapa otwarta w locie</td><td class="num">maks. 3 s, potem pełna powłoka i otwarty wlot</td></tr>
+<tr><td>Hamowanie szybkiego opadania</td><td class="num">zacznij min. 2 000 ft (600 m) nad ziemią, serią krótkich płomieni</td></tr>
+<tr><td>Maks. wiatr przy starcie</td><td class="num">15 kt (7,7 m/s) wg instrukcji Cameron; w praktyce ≤ 5 m/s</td></tr>
+<tr><td>Uwięź</td><td class="num">75% MTOM; wiatr 15 kt solo / 10 kt z pasażerami; maks. 30 m</td></tr>
+</tbody></table></div></aside>
+
+<h3 id="zasady-ulc">Z bazy ULC – do zapamiętania</h3>
+<p class="small">Odpowiedzi według klucza ULC (baza 2025) na pytania, których wcześniejsze części bloku nie omawiają wprost.</p>
+<h4>Gazy, jednostki, atmosfera wzorcowa</h4>
+<ul class="ulc-facts">
+<li><b>Stała gazowa powietrza</b> – miara pracy wykonanej przez 1 mol powietrza ogrzanego o 1 kelwin; wynosi 287 J/(kg·K).<span class="adn"><b>Adnotacja:</b> Wartość 287 J/(kg·K) dotyczy 1 kg powietrza, nie 1 mola – dla 1 mola (stała uniwersalna) to 8,314 J/(mol·K).</span></li>
+<li><b>Jednostki SI</b>: ciśnienie w pascalach [Pa], temperatura w kelwinach [K] (jednostką jest 1 kelwin).</li>
+<li><b>ISA</b> – Międzynarodowa Atmosfera Wzorcowa: na poziomie morza temperatura 15°C i ciśnienie 1013,2 hPa.</li>
+<li><b>Odparowanie propanu</b>: przechodząc ze stanu ciekłego w gazowy, gaz pochłania ciepło z otoczenia.</li>
+<li>Przy spadku temperatury ciśnienie gazu w butlach paliwowych maleje.</li>
+</ul>
+<h4>Od czego zależy siła nośna</h4>
+<ul class="ulc-facts">
+<li>Wraz ze wzrostem temperatury gęstość powietrza maleje.</li>
+<li>Spadek ciśnienia otaczającego powietrza → siła nośna balonu maleje; wzrost ciśnienia atmosferycznego → siła nośna rośnie.</li>
+<li>Przy stałym ciśnieniu i temperaturze otoczenia: wzrost temperatury w powłoce → siła nośna rośnie; spadek temperatury w powłoce → siła nośna maleje.</li>
+<li>Spadek temperatury w powłoce → straty cieplne maleją (mniejsza różnica temperatur).</li>
+<li>Mniejsza pojemność powłoki przy tej samej temperaturze w powłoce → całkowita siła nośna jest mniejsza.</li>
+<li>Balon podlega jednocześnie siłom aerostatycznym i aerodynamicznym, gdy przemieszcza się z inną prędkością lub w innym kierunku niż masa powietrza, w której się znajduje.</li>
+</ul>
+</section>

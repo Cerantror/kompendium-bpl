@@ -1,0 +1,17 @@
+{
+  "name": "kompendium-bpl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kompendium pilota balonowego BPL – wiedza do egzaminu teoretycznego w ULC, quiz i baza pytań",
+  "license": "SEE LICENSE IN README.md",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "pdf": "python3 scripts/build_pdf.py"
+  },
+  "devDependencies": {
+    "@fontsource/barlow-semi-condensed": "^5.1.0",
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/jetbrains-mono": "^5.1.0",
+    "playwright": "^1.48.0"
+  }
+}

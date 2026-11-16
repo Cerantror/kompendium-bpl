@@ -1,0 +1,79 @@
+/* Print overrides for the Kompendium PDF (A4, rendered by Chromium at scale .85) */
+html,body{background:#fff!important}
+body{font-size:15px;line-height:1.55}
+body::before{display:none}
+.layout{display:block;max-width:none}
+.main{padding:0!important}
+.block{display:block!important;max-width:none;margin:0;break-before:page}
+.block p,.block ul,.block ol{max-width:none}
+.block-head{margin-bottom:12px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.block-head h2{font-size:36px}
+.lead{max-width:none;font-size:15.5px}
+.block h3{font-size:22px;margin:26px 0 8px}
+.block h4{font-size:17px}
+a{color:var(--accent);text-decoration:none}
+
+/* keep things whole */
+.note,.example,.diagram,.stat,.calc,.dialog,.formula-box,figure,.emerg details,.alpha,ol.steps>li,ul.check li{break-inside:avoid}
+.tbl tr{break-inside:avoid}
+.tbl thead{display:table-header-group}
+h2,h3,h4,.note-t,.ex-t,.calc-t{break-after:avoid}
+.tbl,.diagram,.formula,.code{overflow:visible}
+.formula,.code{white-space:normal}
+.emerg{display:block}
+.emerg details{margin-bottom:8px}
+.emerg summary{padding:8px 14px 4px}
+.emerg summary::after{content:none}
+.diagram{padding:10px}
+
+/* calculators as worked examples */
+.calc-note{font-family:var(--font-body);font-weight:400;font-size:13px;color:var(--muted)}
+.calc-val{display:block;font-family:var(--font-mono);font-size:15px;color:var(--ink);background:var(--surface-2);border-radius:8px;padding:6px 10px}
+
+/* checklists */
+ul.check label{padding:3px 0;cursor:default}
+ul.check .box{flex:none;width:14px;height:14px;margin-top:4px;border:1.5px solid var(--muted);border-radius:3px}
+
+/* cover */
+.cover{display:block;min-height:auto;padding-top:10px}
+.cv-top{display:flex;align-items:center;gap:12px}
+.cover .brand-mark{font-size:20px;padding:4px 12px}
+.cv-kick{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cv-title{font-family:var(--font-display);font-weight:700;font-size:62px;line-height:1.02;letter-spacing:-.01em;margin:34px 0 0;max-width:15ch}
+.cv-sub{font-size:18px;color:var(--muted);max-width:60ch;margin:14px 0 0}
+.cv-meta{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
+.cv-meta span{background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:14px}
+.cv-meta b{font-family:var(--font-display);font-size:17px;color:var(--accent);margin-right:2px}
+.ct-h{font-family:var(--font-display);font-weight:700;font-size:24px;margin:34px 0 4px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.ct-g{margin-top:12px}
+.ct-gt{font-family:var(--font-display);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--flame);margin:0 0 2px}
+.ct-i{display:flex;align-items:baseline;gap:10px;color:var(--ink);padding:3px 0;font-size:16px}
+.ct-n{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);width:22px;flex:none}
+.ct-t{font-weight:500}
+.ct-d{flex:1;border-bottom:1.5px dotted var(--line);transform:translateY(-4px)}
+.ct-p{font-family:var(--font-mono);font-size:14px;min-width:28px;text-align:right;font-variant-numeric:tabular-nums}
+.cv-foot{margin-top:26px;font-size:13px;color:var(--muted);max-width:none;border-top:1px solid var(--line);padding-top:10px}
+
+/* question appendices */
+.appx h3{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.appx h3 .cnt{font-family:var(--font-mono);font-size:12.5px;font-weight:400;color:var(--muted)}
+.pq{break-inside:avoid;margin:0 0 12px}
+.pq-q{font-weight:600;margin:0 0 3px!important;line-height:1.4}
+.pq-id{font-family:var(--font-mono);font-weight:400;font-size:.78em;color:var(--muted);margin-right:7px}
+ol.pq-a{list-style:upper-alpha;margin:0!important;padding-left:24px}
+ol.pq-a li{margin:1px 0;line-height:1.38}
+ol.pq-a li::marker{font-family:var(--font-mono);font-size:.85em;color:var(--muted)}
+ol.pq-a li.ok{color:var(--ok)}
+ol.pq-a li.ok::marker{color:var(--ok);font-weight:600}
+.tick{font-weight:700}
+.pq-e{font-size:13.5px;color:var(--muted);margin:3px 0 0 24px!important;line-height:1.45}
+.pq-old{font-size:12.5px;background:var(--warn-soft);border-radius:6px;padding:4px 8px;margin:4px 0 0 24px!important;line-height:1.4}
+.pq-old b{color:var(--warn)}
+.pq-cols{column-count:2;column-gap:24px;column-rule:1px solid var(--line);font-size:12.6px}
+.pq-cols .pq{margin-bottom:9px}
+.pq-cols ol.pq-a{padding-left:20px}
+.pq-cols .pq-old{margin-left:20px!important;font-size:11.5px}
+.pq-cols.pq-own{font-size:13.6px}
+.pq-own .pq{margin-bottom:12px}
+
+.adn{break-inside:avoid;font-size:13px}

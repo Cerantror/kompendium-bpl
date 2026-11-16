@@ -1,0 +1,58 @@
+<header class="topbar">
+<div class="topbar-in">
+<button id="menuBtn" class="icon-btn" type="button" aria-label="Pokaż spis bloków" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+<a href="#start" class="brand"><span class="brand-mark">BPL</span><span class="brand-t">Kompendium pilota balonowego</span></a>
+<div class="search" role="search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+<input id="q" type="search" placeholder="Szukaj, np. QNH, MAYDAY, rezerwa paliwa" aria-label="Szukaj w kompendium" autocomplete="off">
+<div id="results" class="results" hidden></div>
+</div>
+</div>
+</header>
+<div class="layout">
+<nav id="nav" class="nav" aria-label="Bloki kompendium"></nav>
+<div id="backdrop" class="backdrop"></div>
+<main id="main" class="main">
+{{BLOCKS}}
+<section class="block" id="quiz" data-title="Sprawdź się" data-short="Quiz i egzamin próbny" data-group="Sprawdź się">
+<header class="block-head">
+<p class="eyebrow">Sprawdź się · nauka i egzamin próbny</p>
+<h2>Sprawdź się</h2>
+<p class="lead">Dwa źródła pytań: <strong>pytania kontrolne</strong> napisane do tego kompendium (z wyjaśnieniami) i <strong>oficjalna baza przykładowych pytań BPL z ULC</strong> (903 pytania, <a href="https://ulc.gov.pl/_download/personel_lotniczy/lke/bpl.pdf" target="_blank" rel="noopener">plik ULC z 4.04.2025</a>). Odpowiedź z klucza ULC jest zawsze uznawana za poprawną – także tam, gdzie klucz jest nieaktualny lub merytorycznie wątpliwy. Przy takich pytaniach po odpowiedzi, a w kompendium pod tekstem, jest <strong>adnotacja</strong> z wyjaśnieniem. Gdy odpowiesz źle, możesz przejść do fragmentu kompendium, który wyjaśnia to pytanie, i jednym kliknięciem wrócić do testu.</p>
+</header>
+<div id="quizApp"></div>
+</section>
+<section class="block" id="kontakt" data-title="Kontakt i zgłoszenia" data-short="Kontakt i zgłoszenia" data-group="Informacje">
+<header class="block-head">
+<p class="eyebrow">Informacje · kontakt</p>
+<h2>Kontakt i zgłoszenia</h2>
+<p class="lead">Kompendium przygotował <strong>Mateusz Korona</strong> na podstawie materiałów z kursu BPL w FBSN i oficjalnej bazy pytań ULC. Jeśli zauważysz błąd w treści, pytanie ze złą odpowiedzią, literówkę, coś nie działa albo masz pomysł na nową funkcję – napisz. Każde zgłoszenie pomaga następnym kursantom.</p>
+</header>
+<div class="contact-card">
+<p class="contact-mail"><span class="small">E-mail</span><a href="mailto:korona.mateusz@gmail.com">korona.mateusz@gmail.com</a></p>
+<div class="contact-btns">
+<a class="btn primary" href="mailto:korona.mateusz@gmail.com?subject=%5BKompendium%20BPL%5D%20B%C5%82%C4%85d%20w%20tre%C5%9Bci&amp;body=Blok%20%28np.%20Meteorologia%29%20i%20fragment%2C%20kt%C3%B3rego%20dotyczy%20zg%C5%82oszenie%3A%0A%0ACo%20jest%20nie%20tak%3A%0A%0AJak%20powinno%20by%C4%87%20i%20sk%C4%85d%20to%20wiadomo%20%28przepis%2C%20instrukcja%2C%20strona%29%3A%0A">Zgłoś błąd w treści</a>
+<a class="btn" href="mailto:korona.mateusz@gmail.com?subject=%5BKompendium%20BPL%5D%20B%C5%82%C4%85d%20w%20pytaniu&amp;body=Numer%20pytania%20%28np.%20PL010-0001%20albo%20K12%20%E2%80%93%20wida%C4%87%20go%20nad%20pytaniem%29%3A%0A%0ACo%20jest%20nie%20tak%20%28tre%C5%9B%C4%87%2C%20odpowied%C5%BA%2C%20odno%C5%9Bnik%20do%20wyja%C5%9Bnienia%29%3A%0A%0A%C5%B9r%C3%B3d%C5%82o%20poprawnej%20informacji%3A%0A">Zgłoś błąd w pytaniu</a>
+<a class="btn" href="mailto:korona.mateusz@gmail.com?subject=%5BKompendium%20BPL%5D%20Co%C5%9B%20nie%20dzia%C5%82a&amp;body=Co%20si%C4%99%20sta%C5%82o%20%28krok%20po%20kroku%29%3A%0A%0ACzego%20si%C4%99%20spodziewa%C5%82e%C5%9B/a%C5%9B%3A%0A%0AUrz%C4%85dzenie%20i%20przegl%C4%85darka%20%28np.%20iPhone%2C%20Safari%29%3A%0A">Zgłoś problem ze stroną</a>
+<a class="btn" href="mailto:korona.mateusz@gmail.com?subject=%5BKompendium%20BPL%5D%20Propozycja%20funkcji&amp;body=Czego%20brakuje%20albo%20co%20by%20pomog%C5%82o%20w%20nauce%3A%0A%0AJak%20to%20sobie%20wyobra%C5%BCasz%3A%0A">Zaproponuj funkcję</a>
+</div>
+<p class="small">Przyciski otwierają program pocztowy z gotowym tematem i szablonem wiadomości. Przy każdym pytaniu w quizie jest też link „Zgłoś problem z tym pytaniem”, który od razu wpisuje jego numer.</p>
+</div>
+<h3 id="kontakt-co">Co napisać w zgłoszeniu</h3>
+<ul>
+<li><strong>Gdzie:</strong> nazwa bloku i fragment albo numer pytania (np. PL010-0001 z bazy ULC lub K12 z pytań kontrolnych – numer widać nad treścią pytania).</li>
+<li><strong>Co jest nie tak:</strong> błędna informacja, zła odpowiedź, odnośnik do niewłaściwego fragmentu, literówka, coś nieczytelnego.</li>
+<li><strong>Jak powinno być:</strong> najlepiej ze źródłem – przepis (np. Part-BFCL, SERA, Prawo lotnicze), instrukcja balonu, materiał z kursu.</li>
+<li><strong>Przy problemach ze stroną:</strong> urządzenie, przeglądarka i krótki opis, co klikałeś/aś. Zrzut ekranu bardzo pomaga.</li>
+</ul>
+<h3 id="kontakt-github">Repozytorium na GitHubie</h3>
+<p>Kompendium trafi do publicznego repozytorium na GitHubie. Wtedy zgłoszenia i propozycje będzie można dodawać także jako <em>Issues</em>, a poprawki – jako <em>pull requesty</em>. Link pojawi się tutaj.</p>
+<aside class="note key"><p class="note-t">Ważne</p>
+<p>Kompendium jest pomocą do nauki, a nie oficjalnym materiałem ULC ani szkoły. W sprawach przepisów rozstrzygają aktualne akty prawne, AIP i instrukcja użytkowania balonu (AFM). Pytania z bazy ULC pochodzą z pliku ULC z 4.04.2025; odpowiedź z klucza ULC jest traktowana jako poprawna, a tam, gdzie klucz jest nieaktualny lub wątpliwy, jest adnotacja.</p></aside>
+<p class="small">Wersja z <span id="wersja">{{WERSJA}}</span>.</p>
+</section>
+
+</main>
+<div id="retBar" class="retbar" hidden><button type="button" class="btn primary" id="retBtn">← Wróć do testu</button><span id="retLbl"></span><button type="button" class="retx" id="retX" aria-label="Zamknij">×</button></div>
+
+</div>

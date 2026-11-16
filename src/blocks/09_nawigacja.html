@@ -1,0 +1,203 @@
+<section class="block" id="nawigacja" data-title="Nawigacja" data-short="Nawigacja" data-group="Przedmioty" data-exam="20 pytań · 75 min" data-num="9">
+<header class="block-head">
+<p class="eyebrow">Przedmiot 9 · egzamin 20 pytań / 75 min</p>
+<h2>Nawigacja</h2>
+<p class="lead">Najdłuższy czas na egzaminie, bo są zadania rachunkowe: skala mapy, przeliczanie jednostek i czasu, kursy z deklinacją i dewiacją. W balonie nie sterujesz kursem – „sterujesz” wysokością, wybierając wiatr o odpowiednim kierunku.</p>
+</header>
+
+<h3 id="nawigacja-ziemia">Ziemia i współrzędne</h3>
+<ul>
+<li><strong>Południk</strong> – łuk łączący bieguny (przecięcie powierzchni Ziemi płaszczyzną przez oś obrotu). <strong>Równik</strong> – przecięcie płaszczyzną prostopadłą do osi przez środek Ziemi; z każdym południkiem tworzy kąt 90°. Długość równika ok. <strong>21 600 NM</strong> (40 000 km).</li>
+<li><strong>Szerokość geograficzna (φ)</strong> – kąt między płaszczyzną równika a pionem punktu (0–90° N/S). <strong>Długość geograficzna (λ)</strong> – kąt dwuścienny między płaszczyzną południka zerowego a południka punktu (0–180° E/W).</li>
+<li>Ćwiartki: λ dodatnia (E) i φ dodatnia (N) → NE; λ ujemna (W), φ dodatnia → NW; λ dodatnia, φ ujemna (S) → SE; obie ujemne → SW.</li>
+<li><strong>1° łuku wielkiego koła = 60 NM ≈ 111 km</strong>; <strong>1′ = 1 NM = 1 852 m</strong>. Tak jest wzdłuż każdego południka i wzdłuż równika (np. między 10° a 11°W na równiku = 111 km; między 45° a 46°N = 111 km).</li>
+<li><strong>Ortodroma</strong> – krótszy łuk wielkiego koła, najkrótsza droga między punktami. <strong>Loksodroma</strong> – linia przecinająca wszystkie południki pod tym samym kątem (na mapie Merkatora prosta).</li>
+</ul>
+
+<h3 id="nawigacja-kierunki">Kierunki, kursy, kąty</h3>
+<div class="tbl"><table>
+<thead><tr><th>N</th><th>NE</th><th>E</th><th>SE</th><th>S</th><th>SW</th><th>W</th><th>NW</th></tr></thead>
+<tbody><tr><td>000°/360°</td><td>045°</td><td>090°</td><td>135°</td><td>180°</td><td>225°</td><td>270°</td><td>315°</td></tr></tbody>
+</table></div>
+<ul>
+<li><strong>Kurs</strong> – kąt od północnego kierunku południka do podłużnej osi statku, mierzony w prawo 0–360°.</li>
+<li><strong>Kąt drogi (NKD, track)</strong> – kierunek linii drogi nad ziemią. <strong>Kąt znoszenia</strong> – między osią statku a linią drogi; maksymalny, gdy wiatr wieje prostopadle do drogi.</li>
+<li><strong>Namiar (bearing, BRG)</strong> – kierunek do punktu. W GPS balonu „heading” to w praktyce kierunek dryfu.</li>
+</ul>
+<aside class="note key"><p class="note-t">Balon leci z wiatrem</p><p>Wiatr podaje się <strong>skąd wieje</strong>, balon leci <strong>dokąd wieje</strong>. Wiatr 270° (zachodni) → balon leci na <strong>090°</strong> (na wschód). Tor balonu = kierunek wiatru ± 180°.</p></aside>
+
+<h3 id="nawigacja-magnetyzm">Magnetyzm i busola</h3>
+<ul>
+<li><strong>Deklinacja (ΔM)</strong> – kąt między południkiem geograficznym a magnetycznym. Wschodnia (E) = dodatnia, zachodnia (W) = ujemna. <strong>Izogona</strong> – linia równej deklinacji. W Polsce deklinacja jest wschodnia, ok. +5…+8° i rośnie (ok. 7′ na rok).</li>
+<li><strong>Dewiacja (ΔB)</strong> – kąt między południkiem magnetycznym a busolowym (zakłócenia od metalu i elektryki na pokładzie).</li>
+<li><strong>Inklinacja</strong> – kąt między wektorem pola magnetycznego a płaszczyzną poziomą; na biegunach magnetycznych <strong>90°</strong>.</li>
+<li>Busola magnetyczna działa dzięki polu magnetycznemu Ziemi.</li>
+</ul>
+<div class="formula-box">
+<p class="formula">KG = KM + ΔM &nbsp;&nbsp;·&nbsp;&nbsp; KM = KB + ΔB &nbsp;&nbsp;·&nbsp;&nbsp; KG = KB + ΔB + ΔM</p>
+<p class="small">KG – kurs geograficzny, KM – magnetyczny, KB – busolowy. Gdy ΔM i ΔB są dodatnie, KB jest mniejszy od KG; gdy ujemne – większy.</p>
+</div>
+<div class="example"><p class="ex-t">Zadania z bazy</p>
+<p>KG = 200°, deklinacja 10°W (−10°), dewiacja −4° → KM = 200 − (−10) = 210° → KB = 210 − (−4) = <strong>214°</strong>.</p>
+<p>NKDG = 259°, NKDM = 255° → ΔM = +4° (E); ΔB = +2° → KB = 255 − 2 = <strong>253°</strong>.</p>
+<p>NKDG = 358°, ΔM = 5°W, ΔB = +4° → NKDM = 358 + 5 = 363 = <strong>003°</strong>; KB = 003 − 4 = <strong>359°</strong>.</p>
+<p>ΔM = 2°E, ΔB = −3°, KB = 127° → NKDM = 127 − 3 = <strong>124°</strong>; NKDG = 124 + 2 = <strong>126°</strong>.</p></div>
+
+<h3 id="nawigacja-mapy">Mapy</h3>
+<ul>
+<li>Mapa = płaski, pomniejszony obraz kulistej Ziemi. Odwzorowania: walcowe (Merkator), stożkowe i wielostożkowe, płaszczyznowe. Wymagania: wiernokątność, zachowanie odległości i kształtów, dokładność, czytelność, aktualność.</li>
+<li><strong>Mapa lotnicza ICAO 1:500 000</strong> (PAŻP, wydanie XXI 2026: jednoarkuszowa, sześcioarkuszowa, spersonalizowana; poprawki i MEF na ais.pansa.pl). Kąty drogi mierzy się kątomierzem przy południku <strong>najbliższym środka odcinka</strong>.</li>
+<li>Balony używają też map topograficznych (np. 1:50 000, siatka UTM, WGS-84; na zawodach współrzędne w formacie 4/4, np. 8593/2069 – najpierw wschód-zachód).</li>
+<li>Kolory na mapie topograficznej: brązowy – rzeźba (warstwice), niebieski – wody, zielony – lasy, czarny – koleje, napisy, siatka, czerwony – drogi główne, żółty – drogi polne.</li>
+<li>Obiekty orientacyjne: <strong>punktowe</strong> (most, kościół, skrzyżowanie), <strong>liniowe</strong> (tory, rzeki, drogi, linie energetyczne), <strong>powierzchniowe</strong> (miasto, jezioro, las).</li>
+</ul>
+<div class="tbl"><table>
+<thead><tr><th>Skala</th><th>1 cm na mapie</th><th>20 cm na mapie</th></tr></thead>
+<tbody>
+<tr><td>1 : 10 000</td><td>100 m</td><td>2 km</td></tr>
+<tr><td>1 : 50 000</td><td>500 m</td><td>10 km</td></tr>
+<tr><td>1 : 200 000</td><td>2 km</td><td>40 km</td></tr>
+<tr><td>1 : 250 000</td><td>2,5 km</td><td>50 km</td></tr>
+<tr><td><strong>1 : 500 000</strong></td><td><strong>5 km</strong></td><td><strong>100 km</strong></td></tr>
+<tr><td>1 : 1 000 000</td><td>10 km</td><td>200 km</td></tr>
+</tbody></table></div>
+<div class="example"><p class="ex-t">Zadania ze skalą</p>
+<p>Mapa 1:500 000, odcinek 27 cm → 27 × 5 km = 135 km → 135 / 1,852 ≈ <strong>73 NM</strong>.</p>
+<p>105 km w terenie na mapie 1:500 000 → 105 / 5 = <strong>21 cm</strong>.</p>
+<p>15 km w terenie = 6 cm na mapie → 1 500 000 cm / 6 cm = <strong>1:250 000</strong>. Tak samo 25 km = 10 cm → 1:250 000; 45 km = 9 cm → 1:500 000; 600 m = 6 cm → 1:10 000.</p></div>
+
+<h3 id="nawigacja-wysokosci">Wysokości</h3>
+<figure class="diagram">
+<svg viewBox="0 0 560 300" role="img" aria-labelledby="alt-t">
+<title id="alt-t">Rodzaje wysokości: bezwzględna, względna, rzeczywista i poziom lotu</title>
+<path class="d-sea" d="M0 270 H560"/>
+<path class="d-ground" d="M0 270 L60 270 L120 240 L200 240 L260 205 L340 205 L400 225 L560 225 L560 300 L0 300 Z"/>
+<rect class="d-field" x="200" y="236" width="56" height="4"/>
+<circle class="d-bal" cx="360" cy="70" r="16"/>
+<path class="d-wire" d="M354 85 L357 98 M366 85 L363 98"/>
+<rect class="d-bk" x="355" y="98" width="10" height="8"/>
+<path class="d-std" d="M0 30 H560"/>
+<g class="d-dim">
+<line x1="420" y1="106" x2="420" y2="270"/><text x="428" y="176">bezwzględna</text><text x="428" y="192">(AMSL, QNH)</text>
+<line x1="300" y1="106" x2="300" y2="205"/><text x="306" y="150">rzeczywista</text><text x="306" y="166">(AGL)</text>
+<line x1="228" y1="106" x2="228" y2="236"/><text x="24" y="196">względna (QFE)</text><text x="24" y="212">od poziomu lotniska</text>
+<line x1="530" y1="30" x2="530" y2="106"/><text x="420" y="58">poziom lotu</text><text x="420" y="74">od 1013,25 hPa</text>
+</g>
+<path class="d-guide" d="M220 106 H536"/>
+<text class="d-small" x="8" y="22">powierzchnia 1013,25 hPa (zmienia wysokość z ciśnieniem)</text>
+<text class="d-small" x="8" y="292">średni poziom morza (MSL)</text>
+</svg>
+<figcaption>Bezwzględna – od średniego poziomu morza (QNH). Względna – od dowolnego poziomu odniesienia, np. lotniska (QFE). Rzeczywista – nad terenem, nad którym jesteś. Ciśnieniowa / poziom lotu – od powierzchni 1013,25 hPa.</figcaption>
+</figure>
+<ul>
+<li>Z nastawą QNH wysokościomierz pokazuje <strong>wysokość bezwzględną</strong> (na ziemi – elewację). QFE – ciśnienie na poziomie lotniska lub progu drogi startowej.</li>
+<li>Wysokość z GPS (geometryczna) i barometryczna różnią się – w przykładzie z wykładu OziExplorer pokazywał 2 966 ft, czujnik barometryczny 2 892 ft. Do przestrzeni i minimów liczy się wysokość barometryczna.</li>
+<li><strong>1 ft = 0,3048 m</strong>; 1 m = 3,28 ft. 762 m = 2 500 ft; 1 000 ft ≈ 300 m; 3 000 ft ≈ 900 m.</li>
+</ul>
+
+<h3 id="nawigacja-czas">Czas</h3>
+<ul>
+<li>W lotnictwie czas <strong>UTC</strong>. Polska: zimą <strong>UTC+1</strong> (UTC = czas lokalny − 1 h), latem <strong>UTC+2</strong> (UTC = lokalny − 2 h).</li>
+<li>Przykłady z bazy: 01:00 latem = 23:00 UTC dnia poprzedniego; 03:00 latem = 01:00 UTC; 03:00 zimą = 02:00 UTC; 13:00 zimą = 12:00 UTC; 23:00 latem = 21:00 UTC.</li>
+<li>Wschody i zachody słońca: AIP Polska, część GEN.</li>
+<li>O 12:00 UTC słońce w Polsce jest już na zachód od południa (słoneczne południe ok. 10:30–11:00 UTC) – patrząc na południe, widzisz je po prawej.</li>
+</ul>
+
+<h3 id="nawigacja-dr">Nawigacja zliczeniowa (DR) i przeliczenia</h3>
+<p class="formula">S = V × t &nbsp;&nbsp;·&nbsp;&nbsp; t = S / V &nbsp;&nbsp;·&nbsp;&nbsp; V = S / t</p>
+<div class="tbl"><table>
+<thead><tr><th>Przeliczenie</th><th>Dokładnie</th><th>W pamięci</th></tr></thead>
+<tbody>
+<tr><td>m/s → km/h</td><td>× 3,6</td><td>× 4 − 10%</td></tr>
+<tr><td>m/s → kt</td><td>× 1,944</td><td>× 2</td></tr>
+<tr><td>kt → km/h</td><td>× 1,852</td><td>× 2 − 10%</td></tr>
+<tr><td>km/h → kt</td><td>× 0,54</td><td>(+10%) / 2</td></tr>
+<tr><td>m/s → ft/min</td><td>× 196,85</td><td>× 200</td></tr>
+<tr><td>ft/min → m/s</td><td>× 0,00508</td><td>/ 200</td></tr>
+<tr><td>NM → km</td><td>× 1,852</td><td></td></tr>
+<tr><td>ft → m</td><td>× 0,3048</td><td>× 0,3</td></tr>
+</tbody></table></div>
+<div class="example"><p class="ex-t">Zadania z bazy</p>
+<p>15 m/s ≈ <strong>29 kt</strong> (15 × 1,944) ·180 km/h = <strong>50 m/s</strong> · 20 m/s = <strong>72 km/h</strong> · 500 ft/min ≈ <strong>2,5 m/s</strong> · 750 ft/min ≈ <strong>3,8 m/s</strong>.</p>
+<p>100 kt przez 18 min → 100 × 18/60 = 30 NM × 1,852 ≈ <strong>55 km</strong>. Węzeł [kt] = NM/h. 762 m × 3,28 ≈ <strong>2 500 ft</strong>.</p>
+<p>Mapa 1:500 000 (1 cm = 5 km): 105 km = <strong>21 cm</strong>; 27 cm = 135 km ≈ <strong>73 NM</strong>.</p>
+<p>Balon: wiatr 4 m/s, lot 75 min → 4 × 3,6 = 14,4 km/h × 1,25 h = <strong>18 km</strong>.</p></div>
+
+<h3 id="nawigacja-wlocie">Nawigacja balonowa w locie</h3>
+<figure class="diagram">
+<svg viewBox="0 0 560 260" role="img" aria-labelledby="veer-t">
+<title id="veer-t">Skręt wiatru z wysokością i tory balonu na trzech wysokościach</title>
+<path class="d-grid" d="M50 20 V250 M50 230 H550"/>
+<circle class="d-start" cx="50" cy="230" r="6"/>
+<text class="d-small" x="58" y="248">start</text>
+<path class="d-track t1" d="M50 230 L101 169"/><circle class="d-end t1" cx="101" cy="169" r="4"/>
+<path class="d-track t2" d="M50 230 L223 130"/><circle class="d-end t2" cx="223" cy="130" r="4"/>
+<path class="d-track t3" d="M50 230 L405 167"/><circle class="d-end t3" cx="405" cy="167" r="4"/>
+<g class="d-legend">
+<path class="d-track t1" d="M250 30 H278"/><text x="286" y="34">300 ft · wiatr 220° / 4 kt → tor 040°</text>
+<path class="d-track t2" d="M250 56 H278"/><text x="286" y="60">1 500 ft · wiatr 240° / 10 kt → tor 060°</text>
+<path class="d-track t3" d="M250 82 H278"/><text x="286" y="86">3 000 ft · wiatr 260° / 18 kt → tor 080°</text>
+</g>
+<text class="d-lab" x="38" y="16">N</text>
+</svg>
+<figcaption>Przykład: wiatr skręca w prawo z wysokością (220° → 260°), więc wyżej tor balonu też skręca w prawo (040° → 080°), a balon leci szybciej. Długość linii = droga w ciągu godziny.</figcaption>
+</figure>
+<ul>
+<li>Balonem nie sterujesz kursem – wybierasz <strong>wysokość</strong>, na której wiatr niesie cię tam, gdzie chcesz. Przed lotem zbierz wiatry dla wielu wysokości (prognoza, balonik z helem), w locie obserwuj dym, flagi, wodę, inne balony.</li>
+<li>Nawigacyjne przygotowanie: dobór map, przewidywane tory dla różnych wysokości, strefy i przeszkody na drodze (farmy wiatrowe, linie, stadniny), pola do lądowania w rejonie końca lotu, częstotliwości FIS.</li>
+<li>W locie: <strong>orientuj mapę</strong> zgodnie z kierunkiem lotu, identyfikuj obiekty liniowe i punktowe, notuj pozycję i czas (sekcja 3 egzaminu praktycznego), licz ETE/ETA do punktów.</li>
+<li>Aplikacje: OziExplorer, Balloon Live (pokazuje m.in. namiar do punktu, kurs, prędkość, ETA, czas nad punktem), IWB Mobile.</li>
+</ul>
+
+<h3 id="nawigacja-gnss">GNSS</h3>
+<ul>
+<li>Systemy: <strong>GPS</strong> (USA), Galileo (UE), GLONASS (Rosja), BeiDou (Chiny). Układ odniesienia <strong>WGS-84</strong>.</li>
+<li>GPS podaje pozycję, prędkość i kierunek nad ziemią (dla balonu: prędkość i kierunek wiatru), czas.</li>
+<li><strong>Jamming</strong> – zagłuszanie (silny sygnał w paśmie GNSS, utrata pozycji). <strong>Spoofing</strong> – fałszowanie (odbiornik pokazuje fałszywą pozycję/czas).</li>
+<li>Od wojny w Ukrainie zakłóceń jest dużo, najwięcej w <strong>północnej i wschodniej Polsce</strong> (źródła w Rosji i na Białorusi). Szczyt w 2025 r.: ponad 2 500 zgłoszeń w czerwcu.</li>
+<li>Co robić: zawsze miej <strong>mapę papierową lub niezależną</strong> i kontroluj pozycję wzrokowo, trzymaj bufor od granic (ADIZ, EPR129), zgłaszaj „dziwne” wskazania do FIS, transponder włączony, łączność z FIS.</li>
+</ul>
+
+<h3 id="nawigacja-ats">Wykorzystanie ATS w nawigacji</h3>
+<ul>
+<li>FIS: informacja o aktywności stref, ruchu, QNH regionalnym; pomoc przy utracie orientacji; zgłoś, jeśli naruszyłeś przestrzeń (zwiększa bezpieczeństwo).</li>
+<li>Transponder: kod 7000 (VFR) lub nadany przez FIS/ATC; IDENT na polecenie. W strefach TMZ obowiązkowy.</li>
+<li>Planowanie: AUP/UUP i airspace.pansa.pl (zajętość od GND do UNL), NOTAM, suplementy AIP. Zasada 2 NM / 200 ft od granic stref.</li>
+</ul>
+
+<h3 id="nawigacja-ulc">Z bazy ULC – do zapamiętania</h3>
+<p class="small">Odpowiedzi według klucza ULC (baza 2025) na pytania, których wcześniejsze części bloku nie omawiają wprost.</p>
+<h4>Definicje</h4>
+<ul class="ulc-facts">
+<li><b>Południk</b> – łuk koła wielkiego łączący oba bieguny geograficzne (przecięcie powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu). <b>Równik</b> – koło wielkie z przecięcia Ziemi płaszczyzną prostopadłą do osi, przechodzącą przez środek Ziemi.</li>
+<li><b>Szerokość geograficzna</b> – kąt środkowy między płaszczyzną równika a prostą łączącą środek Ziemi z równoleżnikiem pozycji. <b>Długość geograficzna</b> – kąt dwuścienny między płaszczyzną południka zerowego a płaszczyzną południka danego punktu.</li>
+<li>1° szerokości geograficznej (np. między 45° a 46° N) oraz 1° długości <b>na równiku</b> (np. 10–11° W, 29–30° E) to ok. <b>111 km</b> (60 NM).</li>
+<li><b>Deklinacja</b> – kąt między północnym kierunkiem południka geograficznego a magnetycznego. <b>Dewiacja</b> – kąt między północnym kierunkiem południka magnetycznego a busolowego (mierzony w systemie połówkowym, ±). Zmienność pola magnetycznego Ziemi wykorzystuje <b>busola magnetyczna</b>.</li>
+<li><b>Inklinacja</b> – kąt między płaszczyzną horyzontu a wektorem natężenia pola magnetycznego Ziemi: <b>+90°</b> na północnym biegunie magnetycznym, <b>−90°</b> na południowym.</li>
+<li><b>Kąt znoszenia</b> – kąt między nakazaną linią drogi a kursem statku powietrznego.</li>
+<li>Kierunki: NE = <b>045°</b>, SE = <b>135°</b>, SW = <b>225°</b>, NW = <b>315°</b>.</li>
+<li>Dodatnie deklinacja i dewiacja → kurs busoli <b>mniejszy</b> od rzeczywistego; ujemne → <b>większy</b>.</li>
+</ul>
+<h4>Wysokości i QNH</h4>
+<ul class="ulc-facts">
+<li><b>QNH</b> – nastawa, przy której wysokościomierz na ziemi wskazuje wzniesienie miejsca; w locie pokazuje wtedy <b>wysokość bezwzględną</b> (nad poziomem morza).</li>
+<li><b>Wysokość rzeczywista</b> – nad terenem, nad którym w danej chwili lecisz. <b>Wysokość względna</b> – nad punktem odniesienia innym niż poziom morza, np. progiem pasa.</li>
+</ul>
+<h4>Czas UTC</h4>
+<ul class="ulc-facts">
+<li>Polska: zimą UTC = czas lokalny − 1 h, latem − 2 h. Przykłady: 01:00 latem = <b>23:00 UTC dnia poprzedniego</b>; 03:00 latem = 01:00 UTC; 23:00 latem = 21:00 UTC; 03:00 zimą = 02:00 UTC; 13:00 zimą = 12:00 UTC.</li>
+<li>O 12:00 UTC w Łodzi słońce jest już na zachód od południa (lokalne południe słoneczne wypada ok. 10:40 UTC), więc patrząc na południe widzisz je <b>po prawej stronie</b>.</li>
+</ul>
+<h4>Mapy i skale</h4>
+<ul class="ulc-facts">
+<li>Kąt drogi mierz kątomierzem przy południku <b>najbliższym środka odcinka</b> trasy. Obiekt orientacyjny liniowy: np. <b>tory kolejowe</b>; powierzchniowy: np. <b>duże miasto</b>.</li>
+<li>20 cm na mapie: 1:1 000 000 → <b>200 km</b>; 1:500 000 → <b>100 km</b>; 1:10 000 → <b>2 km</b>. 27 cm w 1:500 000 = 135 km ≈ <b>73 NM</b>.</li>
+<li>Skala = odległość w terenie / odległość na mapie: 15 km na 6 cm i 25 km na 10 cm → <b>1:250 000</b>; 45 km na 9 cm → <b>1:500 000</b>; 600 m na 6 cm → <b>1:10 000</b>.</li>
+</ul>
+<h4>Przeliczenia i obliczenia</h4>
+<ul class="ulc-facts">
+<li>1 NM = <b>1852 m</b>; węzeł = NM/h. 762 m = <b>2 500 ft</b>; 15 m/s ≈ <b>29 kt</b>; 20 m/s = <b>72 km/h</b>; 500 ft/min ≈ <b>2,5 m/s</b>; 750 ft/min ≈ <b>3,8 m/s</b>.</li>
+<li>100 kt przez 18 min = 30 NM ≈ <b>55 km</b>.</li>
+<li>KR 200°, deklinacja 10°W, dewiacja −4° → KB = <b>214°</b>. Deklinacja 3°E, NKDM 188°, KB 190° → NKDG = <b>191°</b>, dewiacja = <b>−2°</b>.</li>
+</ul>
+</section>
