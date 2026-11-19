@@ -97,7 +97,7 @@ Zaliczenie: **75% w każdym przedmiocie**, tak jak w ULC. Przy egzaminie z kilku
 
 ## 7. Wyjaśnienie w kompendium i powrót do testu
 
-Każde z 1019 pytań jest połączone z fragmentem kompendium, który na nie odpowiada.
+Każde z 1019 pytań (903 z bazy ULC i 116 kontrolnych) jest połączone z fragmentem kompendium, który na nie odpowiada.
 
 1. Po złej odpowiedzi (albo na liście pomyłek po teście) kliknij **Zobacz wyjaśnienie w kompendium →**.
 2. Kompendium otworzy właściwy blok i podświetli fragment.

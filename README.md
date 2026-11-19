@@ -25,11 +25,23 @@ Kompendium powstało na podstawie kursu BPL w FBSN i oficjalnej bazy pytań ULC.
 
 Wyniki quizu i listę pytań, w których się pomyliłeś, zapisuje tylko Twoja przeglądarka.
 
+**Co się zmieniło w kolejnych wersjach:** [CHANGELOG.md](CHANGELOG.md).
+
 **Pełna instrukcja dla kursanta** – wyszukiwarka, tryb nauki i egzamin próbny, wyjaśnienia z powrotem do testu, adnotacje, postępy, kalkulatory, checklisty i plan nauki: [INSTRUKCJA.md](INSTRUKCJA.md).
 
 ## Klucz ULC ma zawsze rację
 
 Na egzaminie liczy się odpowiedź z klucza ULC – także wtedy, gdy opiera się na dawnych przepisach albo jest merytorycznie wątpliwa. Kompendium i quiz traktują ją jako poprawną. Tam, gdzie klucz różni się od obecnych przepisów lub od fizyki (np. wysokościomierz, dawne krajowe przepisy o tlenie i lotach nocnych, stare wytyczne pierwszej pomocy), pod tekstem i pod odpowiedzią w quizie jest **adnotacja** z wyjaśnieniem. W bazie jest 24 takich pytań.
+
+## Treść pytań a plik ULC
+
+Pytania są zgodne z plikiem ULC `bpl.pdf`: te same numery, ta sama kolejność odpowiedzi (pierwsza jest poprawna) i ta sama treść. Poprawiony jest tylko zapis, bo w pliku ULC są błędy, które utrudniają czytanie:
+
+- zgubione znaki, np. „15 0C” zamiast „15°C”, „m3” zamiast „m³”, „O2” zamiast „O₂”,
+- sklejone wyrazy i oczywiste literówki, np. „oczyi”, „Prezez ULC”,
+- ukośniki użyte jako nawiasy, proste cudzysłowy, spacje przed dwukropkiem, zakresy liczb bez półpauzy.
+
+Opis poprawek: [CHANGELOG.md](CHANGELOG.md).
 
 ## Zgłaszanie błędów i pomysłów
 
@@ -62,6 +74,7 @@ pdf/
   print.css            style druku
 docs/                  gotowe pliki do publikacji (GitHub Pages): strona, PDF, CSV
 INSTRUKCJA.md          instrukcja korzystania z kompendium dla kursantów
+CHANGELOG.md           historia zmian
 VERSION                data wersji pokazywana na stronie i w PDF
 ```
 
@@ -70,9 +83,9 @@ VERSION                data wersji pokazywana na stronie i w PDF
 - **Tekst kompendium** – pliki `src/blocks/*.html`. Każdy blok to `<section class="block" id="…" data-title="…" data-group="…">`. Fragmenty, które odpowiadają tylko na pytania z bazy ULC, są na końcu bloku w sekcji „Z bazy ULC – do zapamiętania”.
 - **Adnotacja w tekście** – wewnątrz punktu listy: `<span class="adn"><b>Adnotacja:</b> …</span>`.
 - **Pytania kontrolne** – `data/own.json`: `{"b": "<id bloku>", "q": "pytanie", "a": ["poprawna", "zła", "zła", "zła"], "e": "wyjaśnienie"}`, opcjonalnie `"adn"`. Pytania mają numery K1, K2… według kolejności w pliku, więc nowe dopisuj na końcu.
-- **Baza ULC** – `data/bank.json`. Nie zmieniaj treści pytań ani klucza (poza oczywistymi literówkami). Zastrzeżenia do klucza wpisuj jako `"adn"`.
+- **Baza ULC** – `data/bank.json`. Nie zmieniaj treści pytań ani klucza. Dozwolone są tylko poprawki zapisu (literówki, zgubione znaki, spacje) – opisz je w [CHANGELOG.md](CHANGELOG.md). Zastrzeżenia do klucza wpisuj jako `"adn"`.
 - **Odnośniki** – tworzą się automatycznie. Jeśli pytanie prowadzi do złego fragmentu, dopisz do `data/refs_manual.json` wpis `"ID_PYTANIA": "<id bloku>|<fragment tekstu docelowego punktu>"`. Pytania o niskiej pewności dopasowania lądują w `build/refs_review.json`.
-- **Data wersji** – plik `VERSION`.
+- **Data wersji** – plik `VERSION`. Każdą zmianę dopisz też do [CHANGELOG.md](CHANGELOG.md).
 
 Po każdej zmianie przebuduj pliki w `docs/` i dodaj je do commita.
 
@@ -85,7 +98,7 @@ pip install -r requirements.txt
 python3 scripts/build.py
 ```
 
-Skrypt sprawdza, czy każde z 1019 pytań ma odnośnik do tekstu i czy w HTML nie ma powtórzonych identyfikatorów ani pustych kotwic – przy błędzie przerywa budowanie.
+Skrypt sprawdza, czy każde z 1019 pytań (903 z bazy ULC i 116 kontrolnych) ma odnośnik do tekstu i czy w HTML nie ma powtórzonych identyfikatorów ani pustych kotwic – przy błędzie przerywa budowanie.
 
 PDF (dodatkowo Node.js 18+):
 
